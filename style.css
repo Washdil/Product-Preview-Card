@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 14px;
+  background-color: hsl(30, 38%, 92%);
+  
+  
+}
+.container {
+  min-width: 700px;
+  height: 500px;
+  display: flex;
+  border: 12px;
+  
+}
+
+
+
+.container-img img {
+  height: 500px;
+  width: 350px;
+  
+}
+
+.container-img img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.container-card {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: inherit;
+  width: 350px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.first-heading h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}
+
+.second-heading h2 {
+  margin-top: 22px;
+  font-size: 40px;
+  font-weight: 700;
+  
+}
+
+
+.para p {
+  margin-top: 22px;
+  font-size: 16px;
+  color: gray;
+  line-height: 2rem;
+
+}
+
+.price {
+  display: flex;
+  margin-top: 22px;
+  align-items: center;
+}
+
+.price .bold {
+  font-size: 35px;
+  font-family: "Fraunces";
+  font-weight: 700;
+  padding-right: 12px;
+  color: hsl(158, 36%, 37%);
+}
+
+.price .small {
+  color: gray ;
+  text-decoration-line: line-through;
+}
+ 
+.button button {
+  margin-top: 22px;
+  width: 290px;
+  height: 48px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+
+@media screen and (min-width: 700px) {
+  .container {
+    flex-direction: row ;
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+  .container-img img {
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+  }
+  .container-card {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+  }
+}
+ 
